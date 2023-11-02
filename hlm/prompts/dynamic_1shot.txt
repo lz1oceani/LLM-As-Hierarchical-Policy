@@ -1,0 +1,11 @@
+Question:
+{demo_question}
+Answer:
+{demo_answer}
+
+Please refer to the above examples as demonstrations. If they aren't relevant to the current question, you may disregard them.
+
+Question:
+{question}
+Answer:
+Please provide step-by-step reasoning, and present the final answer in the latex environment starting with \boxed{, without using a diagram.

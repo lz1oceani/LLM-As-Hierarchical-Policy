@@ -1,0 +1,12 @@
+Question:
+{question}
+
+Presented below are two possible answers:
+
+**Answer 1:**
+{solution1}
+
+**Answer 2:**
+{solution2}
+
+Which one do you consider to be the most accurate? Examine the difference between two answers thoroughly first and then provide your preference by stating with "Preferred Answer Index: " and the best answer.

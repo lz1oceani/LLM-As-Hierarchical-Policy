@@ -1,0 +1,4 @@
+Question:
+{question}
+Answer:
+Please provide step-by-step reasoning, and present the final answer in the latex environment starting with \boxed{, without using a diagram.
