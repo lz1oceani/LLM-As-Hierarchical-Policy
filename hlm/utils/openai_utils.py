@@ -9,7 +9,7 @@ TOTAL_TOKENS = PROMPT_TOKENS = COMPLETION_TOKENS = TOTAL_MONEY = 0
 
 def login_openai():
     import openai
-    openai.api_key = os.getenv("OPENAI_KEY")
+    openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def list_openai_model_ids():
