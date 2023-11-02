@@ -5,8 +5,8 @@ This repo contains the code, prompts, and model outputs for [Unleashing the Crea
 Current methods for enabling Large Language Models (LLMs) to solve challenging reasoning problems often fall short due to limited exploration capabilities. In this work, we enhance LLMs' problem-solving strategies by framing them as a **hierarchical policy** through in-context learning. This consists of a visionary **leader** proposing diverse high-level tactics and a **follower** executing detailed processes per each tactic. We introduce a tournament-based approach to efficiently select the best solution from the generated solution groups. Our approach fosters strategic exploration, generates insightful hints, and improves answer accuracy on challenging problems in the MATH dataset.
 
 Here are teasers for our methods:
-![method](https://github.com/lz1oceani/LLM-As-Hierarchical-Policy-Test/images/teaser.jpg)
-![example](https://github.com/lz1oceani/LLM-As-Hierarchical-Policy-Test/images/example.jpg)
+![method](https://github.com/lz1oceani/LLM-As-Hierarchical-Policy-Test/blob/master/images/teaser.jpg)
+![example](https://github.com/lz1oceani/LLM-As-Hierarchical-Policy-Test/blob/master/images/example.jpg)
 
 
 ## Setup
