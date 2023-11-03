@@ -170,6 +170,21 @@ def run_for_hard():
     samples_need_check, fast_acc = load(results / "samples/gpt-3-retrieval.pkl")
     filename = results / "tournament/gpt-4-retrieval.json"
     tournament(samples_need_check, fast_acc, baseline_results, num=num, prompt_name="0shot/compare_answer.txt", filename=filename)
+
+
+def run_for_hard_20():
+    results = RESULTS / "math_hard_20"
+    gpt3_folder = results / "reasoning_output/gpt-3.5-turbo"
+    baseline_results = load(gpt3_folder / "sc_0shot.json")
+    
+    ChatBot.init("gpt-4")
+    num = 1
+    samples_need_check, fast_acc = load(results / "samples/gpt-3-key_techniques.pkl")
+    filename = results / "tournament/gpt-4-key_techniques.json"
+    tournament(samples_need_check, fast_acc, baseline_results, num=num, prompt_name="0shot/compare_answer.txt", filename=filename)
+    samples_need_check, fast_acc = load(results / "samples/gpt-3-retrieval.pkl")
+    filename = results / "tournament/gpt-4-retrieval.json"
+    tournament(samples_need_check, fast_acc, baseline_results, num=num, prompt_name="0shot/compare_answer.txt", filename=filename)
     
 
 def run_for_ablation():
@@ -198,6 +213,7 @@ if __name__ == '__main__':
         frequency_penalty=0,
         presence_penalty=0,
     )
+    run_for_hard_20()
     run_for_ablation()
     run_for_hard()
     
