@@ -22,7 +22,7 @@ You can find prompts for instructing LLMs to generate and compare reasoning chai
 - [use the given tactic](hlm/prompts/use_techniques.txt)
 - [compare two reasoning chains](hlm/prompts/compare_answer.txt)
 
-> 1. To generate reasoning chains with 0shot prompt or high-level tactics, use the following command:
+1. To generate reasoning chains with 0shot prompt or high-level tactics, use the following command:
 
 ``python hlm/app/evaluate_qa.py --dataset MATH --dataset-args=DATASET_ARGS --dataset-name=DATASET_NAME --reasoning-args=REASONING_ARGS``
 
@@ -31,13 +31,13 @@ Explanation of key arguments:
 - `DATASET_NAME`: The name of the dataset, which may differ from the value passed to `--dataset`.
 - `REASONING_ARGS`: Specifies the reasoning strategies, e.g., 0-shot or generated tactics. For more details, refer to the [scripts](scripts/) directory.
 
-> 2. To compute Grouped-Majority Recall.
+2. To compute Grouped-Majority Recall.
 Please see `hlm/app/computer_gmr.py` for details.
 
-> 3. Run tournament over group majorities.
+3. Run tournament over group majorities.
 In some questions, all group majorities may be the same, or there might be no correct answer among them. For these cases, we do not need to run tournament. To reduce the cost, you can use `hlm/app/get_examples_for_tournament.py` to generate the filtered questions before running a tournament. Then, execute `hlm/app/run_tournament.py` to obtain the final accuracy.
 
-> 4. Results of more question from level 5 of MATH dataset can be downloaded [here](https://drive.google.com/file/d/1ZWCoIwcsc3tSdfpRfhw1Bj2kFr2nQ37N/view?usp=sharing).
+4. Results of more question from level 5 of MATH dataset can be downloaded [here](https://drive.google.com/file/d/1ZWCoIwcsc3tSdfpRfhw1Bj2kFr2nQ37N/view?usp=sharing).
 
 ## File Structure and Data Format
 
